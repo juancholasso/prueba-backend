@@ -4,6 +4,12 @@ const { DataTypes } = require('sequelize');
 const User = require('../models/user')(sequelize, DataTypes);
 const jwt = require('jsonwebtoken');
 
+/**
+ * Generate JWT for authorization end points
+ * @param {*} res 
+ * @param {*} req 
+ * @returns JSON
+ */
 module.exports.generateJWT = async (res, req) => {
     let email = req.body.email;
     let password = req.body.password;

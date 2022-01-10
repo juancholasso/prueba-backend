@@ -4,6 +4,12 @@ const Category = require('../models/category')(sequelize, DataTypes);
 const Joi = require('joi');
 const http_codes = require('http-status-codes').StatusCodes
 
+/**
+ * Create new category
+ * @param {*} res 
+ * @param {*} req 
+ * @returns JSON
+ */
 module.exports.create = async (res, req)=>{
     try{
         //Validation body request -----
@@ -32,6 +38,12 @@ module.exports.create = async (res, req)=>{
     }
 }
 
+/**
+ * Get list of Categories
+ * @param {*} res 
+ * @param {*} req 
+ * @returns JSON Array
+ */
 module.exports.get = async (res, req)=>{
     try{
         let categories = await Category.findAll();

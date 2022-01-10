@@ -6,6 +6,12 @@ const { Op } = require("sequelize");
 const Joi = require('joi');
 const http_codes = require('http-status-codes').StatusCodes
 
+/**
+ * Create a new Product
+ * @param {*} res 
+ * @param {*} req 
+ * @returns JSON
+ */
 module.exports.create = async (res, req)=>{
     try{
         //Validation body request -----
@@ -51,6 +57,12 @@ module.exports.create = async (res, req)=>{
     }
 }
 
+/**
+ * Get Product by id
+ * @param {*} res 
+ * @param {*} req 
+ * @returns JSON
+ */
 module.exports.get = async (res, req)=>{
     try{
         let product = await Product.findByPk(req.params.id);
@@ -64,6 +76,12 @@ module.exports.get = async (res, req)=>{
     }
 }
 
+/**
+ * Get list of products
+ * @param {*} res 
+ * @param {*} req 
+ * @returns JSON Array
+ */
 module.exports.list = async (res, req)=>{
     try{
         let filter = {};
@@ -89,6 +107,12 @@ module.exports.list = async (res, req)=>{
     }
 }
 
+/**
+ * Update a product
+ * @param {*} res 
+ * @param {*} req 
+ * @returns JSON
+ */
 module.exports.update = async (res, req)=>{
     try{
         let product = await Product.findByPk(req.params.id);
@@ -145,6 +169,12 @@ module.exports.update = async (res, req)=>{
     }
 }
 
+/**
+ * Remove a product
+ * @param {*} res 
+ * @param {*} req 
+ * @returns JSON
+ */
 module.exports.delete = async (res, req)=>{
     try{
         let product = await Product.findByPk(req.params.id);
