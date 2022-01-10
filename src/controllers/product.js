@@ -148,7 +148,7 @@ module.exports.update = async (res, req)=>{
 module.exports.delete = async (res, req)=>{
     try{
         let product = await Product.findByPk(req.params.id);
-        await product.destroy();
+        await product?.destroy();
     
         res.json(200);
         return;
