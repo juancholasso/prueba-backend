@@ -1,0 +1,335 @@
+{
+	"info": {
+		"_postman_id": "15fa6b9d-cadd-43fe-9582-870314bdbe7c",
+		"name": "PruebaRnB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Category Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJuYW1lIjoiSnVhbiBQYWJsbyBDYW1hcmdvIiwiZW1haWwiOiJqdWFuY2hvbGFzc29AaG90bWFpbC5jb20iLCJjcmVhdGVkQXQiOiIyMDIyLTAxLTEwVDE2OjI5OjI3LjE3OFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAxLTEwVDE2OjI5OjI3LjE3OFoifSwiaWF0IjoxNjQxODQxOTcwLCJleHAiOjE2NDE4NDU1NzB9.h6XM0fgeBguXecZbPTeooJfhj7S8vqFBKpjBNeKQ-rA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Tecnología\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prueba-backend-rnb.herokuapp.com/category/",
+					"protocol": "https",
+					"host": [
+						"prueba-backend-rnb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"category",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJuYW1lIjoiSnVhbiBQYWJsbyBDYW1hcmdvIiwiZW1haWwiOiJqdWFuY2hvbGFzc29AaG90bWFpbC5jb20iLCJjcmVhdGVkQXQiOiIyMDIyLTAxLTEwVDE2OjI5OjI3LjE3OFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAxLTEwVDE2OjI5OjI3LjE3OFoifSwiaWF0IjoxNjQxODQxMDU0LCJleHAiOjE2NDE4NDQ2NTR9.aYXIhgx-gfC5AIY_awcEK3X80xasIeNf9CV2pkaLLkk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://prueba-backend-rnb.herokuapp.com/product/13",
+					"protocol": "https",
+					"host": [
+						"prueba-backend-rnb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJuYW1lIjoiSnVhbiBQYWJsbyBDYW1hcmdvIiwiZW1haWwiOiJqdWFuY2hvbGFzc29AaG90bWFpbC5jb20iLCJjcmVhdGVkQXQiOiIyMDIyLTAxLTEwVDE2OjI5OjI3LjE3OFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAxLTEwVDE2OjI5OjI3LjE3OFoifSwiaWF0IjoxNjQxODQxOTcwLCJleHAiOjE2NDE4NDU1NzB9.h6XM0fgeBguXecZbPTeooJfhj7S8vqFBKpjBNeKQ-rA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://prueba-backend-rnb.herokuapp.com/category/",
+					"protocol": "https",
+					"host": [
+						"prueba-backend-rnb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"category",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJuYW1lIjoiSnVhbiBQYWJsbyBDYW1hcmdvIiwiZW1haWwiOiJqdWFuY2hvbGFzc29AaG90bWFpbC5jb20iLCJjcmVhdGVkQXQiOiIyMDIyLTAxLTEwVDE2OjI5OjI3LjE3OFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAxLTEwVDE2OjI5OjI3LjE3OFoifSwiaWF0IjoxNjQxODQxMDU0LCJleHAiOjE2NDE4NDQ2NTR9.aYXIhgx-gfC5AIY_awcEK3X80xasIeNf9CV2pkaLLkk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://prueba-backend-rnb.herokuapp.com/product",
+					"protocol": "https",
+					"host": [
+						"prueba-backend-rnb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product"
+					],
+					"query": [
+						{
+							"key": "category_id",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "Pro",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJuYW1lIjoiSnVhbiBQYWJsbyBDYW1hcmdvIiwiZW1haWwiOiJqdWFuY2hvbGFzc29AaG90bWFpbC5jb20iLCJjcmVhdGVkQXQiOiIyMDIyLTAxLTEwVDE2OjI5OjI3LjE3OFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAxLTEwVDE2OjI5OjI3LjE3OFoifSwiaWF0IjoxNjQxODQxOTcwLCJleHAiOjE2NDE4NDU1NzB9.h6XM0fgeBguXecZbPTeooJfhj7S8vqFBKpjBNeKQ-rA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Tablet 15 pulgadas 2\",\n    \"description\": \"Tableta marca huawei\",\n    \"price\": 600,\n    \"category_id\": 7\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prueba-backend-rnb.herokuapp.com/product",
+					"protocol": "https",
+					"host": [
+						"prueba-backend-rnb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJuYW1lIjoiSnVhbiBQYWJsbyBDYW1hcmdvIiwiZW1haWwiOiJqdWFuY2hvbGFzc29AaG90bWFpbC5jb20iLCJjcmVhdGVkQXQiOiIyMDIyLTAxLTEwVDE2OjI5OjI3LjE3OFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAxLTEwVDE2OjI5OjI3LjE3OFoifSwiaWF0IjoxNjQxODM3NDA1LCJleHAiOjE2NDE4NDEwMDV9.Vvv_SXiCPZNg3EnzJzDcGY-1sLxVwllHpqV9dxHr7i8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Producto 19 updated\",\n    \"description\": \"Descripcion del producto 1\",\n    \"price\": 1000,\n    \"category_id\": 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prueba-backend-rnb.herokuapp.com/product/19",
+					"protocol": "https",
+					"host": [
+						"prueba-backend-rnb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Get by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJuYW1lIjoiSnVhbiBQYWJsbyBDYW1hcmdvIiwiZW1haWwiOiJqdWFuY2hvbGFzc29AaG90bWFpbC5jb20iLCJjcmVhdGVkQXQiOiIyMDIyLTAxLTEwVDE2OjI5OjI3LjE3OFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAxLTEwVDE2OjI5OjI3LjE3OFoifSwiaWF0IjoxNjQxODQxOTcwLCJleHAiOjE2NDE4NDU1NzB9.h6XM0fgeBguXecZbPTeooJfhj7S8vqFBKpjBNeKQ-rA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cod\": 1232312,\n    \"name\": \"JuanPa\",\n    \"city\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prueba-backend-rnb.herokuapp.com/product/21",
+					"protocol": "https",
+					"host": [
+						"prueba-backend-rnb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Juan Pablo Camargo\",\n    \"password\":\"1234juan\",\n    \"email\":\"jcamargo@serempre1.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prueba-backend-rnb.herokuapp.com/auth/signup",
+					"protocol": "https",
+					"host": [
+						"prueba-backend-rnb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"juancholasso@hotmail.com\",\n    \"password\":\"1234juan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prueba-backend-rnb.herokuapp.com/auth/login",
+					"protocol": "https",
+					"host": [
+						"prueba-backend-rnb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
